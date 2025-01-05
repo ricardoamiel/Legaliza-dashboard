@@ -1,7 +1,7 @@
 import cx from "@/libs/cx";
 import isEmpty from "@/libs/is-empty";
 
-import { useId, forwardRef, useState } from "react";
+import React,{ useId, forwardRef, useState } from "react";
 
 export interface InputProps
   extends React.InputHTMLAttributes<HTMLInputElement> {

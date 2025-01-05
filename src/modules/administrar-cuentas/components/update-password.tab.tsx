@@ -4,7 +4,7 @@ import Icon from "@/Components/ui/icon";
 import { useMutation } from "@tanstack/react-query";
 import publicApiConfig from "@/config/public-api.config";
 import { toast } from "sonner";
-import { useState } from "react";
+import React, { useState } from "react";
 import { ToggleProps } from "@/interfaces/types";
 import Cookies from "js-cookie";
 import { authConfig } from "@/context/auth.context";

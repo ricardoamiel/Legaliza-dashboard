@@ -4,6 +4,7 @@ import "@/styles/globals.css";
 import DashboardLayout from "@/Components/layout/dashboard/layout";
 import { Toaster } from "sonner";
 import { AuthProvider } from "@/context/auth.context";
+import React from "react";
 
 const gloock = Gloock({
   weight: "400",

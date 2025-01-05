@@ -4,7 +4,7 @@ import cx from "@/libs/cx";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Menu from "./menu";
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import useAuth from "@/hooks/auth.hook";
 import MenuUser from "./menu-user";
 import Link from "next/link";
