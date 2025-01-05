@@ -1,0 +1,27 @@
+.table {
+  @apply h-full w-full overflow-hidden overflow-x-auto;
+}
+
+.table table {
+  @apply w-full text-left;
+}
+
+.table thead {
+  @apply border-b border-[#A0A0A0] text-black dark:text-white;
+}
+
+.table thead tr th {
+  @apply min-w-max px-2 py-3 font-bold text-primary-500 md:px-6;
+}
+
+.table tbody tr {
+  @apply font-medium text-black transition-colors dark:text-white;
+}
+
+.table tbody tr td {
+  @apply px-2 py-2 md:px-4;
+}
+
+.table td {
+  @apply whitespace-nowrap;
+}

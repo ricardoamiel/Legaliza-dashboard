@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gloockFont {
+  font-family: var(--font-gloock);
+}
+
+.outfitFont {
+  font-family: var(--font-outfit);
+}

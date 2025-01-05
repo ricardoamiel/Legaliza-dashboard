@@ -1,0 +1,10 @@
+import { z } from "zod";
+
+export const AddCardSchema = z.object({
+  name: z.string().min(1, { message: "El nombre es obligatorio" }),
+  lastName: z.string().min(1, { message: "El apellido es obligatorio" }),
+  email: z.string().email({ message: "Debe ser un correo electrónico válido" }),
+  password: z.string().min(8, { message: "La contraseña debe tener al menos 8 caracteres" }),
+  roles: z.enum(["ADMINISTRADOR", "ASISTENTE_VEHICULAR", "ASISTENTE_NOTARIAL", "CLIENTE"]),
+});
+
