@@ -47,7 +47,7 @@ export default function ModificarTramite() {
   const numeroProceso = tramiteData.data.numeroProceso;
 
   return (
-    <div className="text-white p-6 overflow-y-auto h-screen pb-20"
+    <div className="text-white p-6 overflow-y-auto h-screen pb-10"
         style={{ maxHeight: `calc(100vh - 150px)` }}
     >
       <h1 className="text-4xl font-bold mb-8 text-center pl-8 pr-8">
