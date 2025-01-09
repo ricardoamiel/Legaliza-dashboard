@@ -17,6 +17,8 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   onEdit,
   onDelete,
 }) => {
+  const isAdmin = role.toUpperCase() === "ADMINISTRADOR";
+
   return (
     <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-gray-700 rounded-lg shadow-md">
       <div className="flex items-center gap-4 mb-4 sm:mb-0">
@@ -41,12 +43,14 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         >
           Edit
         </button>
-        <button
-          onClick={onDelete}
-          className="text-red-500 hover:text-red-700 transition"
-        >
-          Delete
-        </button>
+        {!isAdmin && (
+          <button
+            onClick={onDelete}
+            className="text-red-500 hover:text-red-700 transition"
+          >
+            Delete
+          </button>
+        )}
       </div>
     </div>
   );
