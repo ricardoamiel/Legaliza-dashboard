@@ -5,7 +5,7 @@ import AllAccounts from "@/modules/administrar-cuentas/all-accounts"; // Asumien
 
 export default function TodasLasCuentas() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
+    <div className="min-h-screen bg-gray-900 text-white p-6 md:ml-[0px] ml-[74px]">
       <h1 className="text-4xl font-bold text-center mb-8">
         Administrar Todas las Cuentas
       </h1>

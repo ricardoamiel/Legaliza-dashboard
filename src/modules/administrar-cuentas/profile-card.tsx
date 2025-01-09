@@ -18,8 +18,8 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   onDelete,
 }) => {
   return (
-    <div className="flex items-center justify-between p-4 bg-gray-700 rounded-lg shadow-md">
-      <div className="flex items-center gap-4">
+    <div className="flex flex-col sm:flex-row items-center justify-between p-4 bg-gray-700 rounded-lg shadow-md">
+      <div className="flex items-center gap-4 mb-4 sm:mb-0">
         {imageSrc && (
           <img
             src={imageSrc}

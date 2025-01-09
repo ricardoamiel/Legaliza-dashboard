@@ -78,6 +78,7 @@ const DashboardLayout: React.FC<{ children: React.ReactNode }> = ({
           configSidebar.sidebar ? "w-[300px]" : "w-[74px]",
           "fixed md:relative",
           "md:block",
+          "z-20" // Asegúrate de que el z-index sea alto para que el sidebar esté por encima del contenido
         )}
       >
         <div className="flex h-[96px] w-full items-center justify-start gap-x-4 px-3 py-4">

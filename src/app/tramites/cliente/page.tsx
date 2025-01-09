@@ -117,12 +117,13 @@ export default function Home() {
   if (loading) return <div>Cargando...</div>;
 
   return (
-    <div className="text-white bg-gray-900 h-full overflow-auto">
+    <div className="text-white bg-gray-900 h-full overflow-auto md:ml-[0px] ml-[74px]">
       <h3 className="text-4xl font-bold mb-8 pt-4 text-center">Mis Trámites</h3>
       <div className="mt-4 rounded-lg bg-[#111827] p-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <InputDate
+              className="truncate"
               label="Fecha"
               value={values.date}
               onChange={(date) => {
@@ -140,8 +141,9 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <Select
+              className="truncate"
               label="Por Tipo"
               options={Object.entries(TiposTramite).map(([value, label]) => ({
                 value,
@@ -154,8 +156,9 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <Select
+              className="truncate"
               label="Por Estado"
               options={[
                 { label: "Completo", value: "COMPLETO" },
@@ -168,9 +171,9 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <Button
-              className="w-full px-4 py-2 bg-primary-500 text-white font-bold rounded-lg"
+              className="truncate w-full px-4 py-2 bg-primary-500 text-white font-bold rounded-lg"
               onClick={() => {
                 setParams((prev) => ({
                   page: "1",
@@ -183,18 +186,18 @@ export default function Home() {
               Limpiar Filtros
             </Button>
           </div>
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <Button
-              className="w-full px-4 py-2 bg-primary-800 text-white font-bold rounded-lg"
+              className="truncate w-full px-4 py-2 bg-primary-800 text-white font-bold rounded-lg"
               onClick={handleModify}
               disabled={!selectedTramite}
             >
               Modificar
             </Button>
           </div>
-          <div className="pl-10 w-full">
+          <div className="pl-4 pr-4 w-full">
             <Button
-              className="w-full px-4 py-2 bg-primary-500 text-white font-bold rounded-lg"
+              className="truncate w-full px-4 py-2 bg-primary-500 text-white font-bold rounded-lg"
               onClick={handleDelete}
               disabled={!selectedTramite}
             >

@@ -68,7 +68,7 @@ export default function MainMenu() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white overflow-hidden">
+    <div className="min-h-screen bg-gray-900 text-white overflow-hidden md:ml-[0px] ml-[74px]">
       <div className="max-w-7xl mx-auto p-6 h-full flex flex-col">
         <h1 className="text-4xl font-bold text-center mb-8">
           Dashboards de trámites

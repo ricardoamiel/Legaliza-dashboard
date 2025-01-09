@@ -194,7 +194,7 @@ export default function TransferenciaVehicularDashboardPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
+    <div className="min-h-screen bg-gray-900 text-white p-6 md:ml-[0px] ml-[74px]">
       <h1 className="text-4xl font-bold mb-8 text-center">
         Dashboard de Transferencia Vehicular
       </h1>
