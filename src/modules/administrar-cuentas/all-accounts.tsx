@@ -129,13 +129,13 @@ const AllAccounts: React.FC<Props> = ({
           <p className="text-white font-bold">Cantidad de cuentas: {filteredUsers.length}</p>
         </div>
         <Button
-          className="col-span-1 h-12 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="truncate col-span-1 h-12 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-blue-600"
           onClick={addCard.onToggle}
         >
           + Crear nueva cuenta
         </Button>
         <Button
-          className="col-span-1 h-12 px-4 bg-primary-500 hover:bg-blue-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-blue-600"
+          className="truncate col-span-1 h-12 px-4 bg-primary-500 hover:bg-blue-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-blue-600"
           onClick={() => handleFilterByRole(null)}
         >
           Limpiar Filtros
@@ -159,10 +159,10 @@ const AllAccounts: React.FC<Props> = ({
             options={rolesOptions}
             value={selectedRole || ""}
             onChange={(e) => handleFilterByRole(e.value)}
-            className="col-span-1 h-12 border border-gray-700 rounded-lg"
+            className="truncate col-span-1 h-12 border border-gray-700 rounded-lg w-full"
           />
           <button
-            className="col-span-1 h-12 px-4 bg-primary-500 hover:bg-primary-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-red-600"
+            className="truncate col-span-1 h-12 px-4 bg-primary-500 hover:bg-primary-700 text-white rounded-lg border border-gray-700 font-bold focus:outline-none focus:ring-2 focus:ring-blue-600"
             onClick={handleSearchByEmail}
           >
             Buscar
